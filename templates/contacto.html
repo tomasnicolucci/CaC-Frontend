@@ -6,7 +6,26 @@
     <link rel="stylesheet" href="../static/css/contacto.css" />
     <title>Contacto</title>
 </head>
-<body>
-    
+<body>  
+    <div class="container">  
+        <form id="contact" action="" method="post">
+          <h3>Concacto</h3>
+          <fieldset>
+            <input placeholder="Nombre" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Email" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Numero" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Escribe tu mensaje..." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+          </fieldset>
+        </form>
+      </div>
 </body>
 </html>
