@@ -1,60 +1,95 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    background: url(../img/Fondo.jpg) fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    height: 100vh;
+body {
+  background: url(../img/Fondo.jpg) fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
- }
+h1{
+  text-align: center;
+  font-size: 3rem;
+}
 
-  p {
-    margin-bottom: 20px;
-  }
-  .Nav {
-    width: 100%;
-    margin: auto;
-    overflow:hidden;
-  }
-  header {
-    background: rgba(0,0,0,0.9);
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-  }
+p {
+  margin-bottom: 20px;
+}
+
+/* No se esta usando por el momento */
+/* .Nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  overflow:hidden;
+} */
+
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  display: flex;
+  justify-content:space-between;
+  padding: 0px 50px;
+  height: 60px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
   
-  nav {
-    float: right; /* Lado derecho */
-  }
-  nav ul {
-    list-style: none;
-    overflow: hidden; /* Limpio float */
-  }
-  nav ul li {
-    float: left;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  nav ul li a {
-    display: block; /* elementos bloque para el padding */
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-  }
-  nav ul li:hover {
-    background: slategray;
-    border-radius: 4px;
+nav ul li {
+  float: left;
+  font-size: 16px;
+}
 
-  }
-  /* perdon pero me mata los ojos el fondo blanco completo TT_TT */
-  .contenido {
-    padding-top: 50px;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: ghostwhite;
-    opacity: .75;
-  }
+nav ul li a {
+  display: block; /* elementos bloque para el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: slategray;
+  border-radius: 4px;
+}
+
+/* perdon pero me mata los ojos el fondo blanco completo TT_TT */
+.contenido {
+  padding-top: 4rem;
+  font-size: medium;
+  background-color: ghostwhite;
+  opacity: .75;
+}
+
+.btn-home{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.redes-iconos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  font-size: 5rem;
+  margin-block-start: 0;
+  text-align: center;
+}

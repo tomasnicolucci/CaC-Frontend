@@ -1,0 +1,13 @@
+body {
+    background: url(../img/Fondo.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    background-color: ghostwhite;
+    opacity: .75;
+}
