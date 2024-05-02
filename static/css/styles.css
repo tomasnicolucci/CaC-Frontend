@@ -71,12 +71,12 @@ nav ul li:hover {
   border-radius: 4px;
 }
 
-/* perdon pero me mata los ojos el fondo blanco completo TT_TT */
 .contenido {
   padding-top: 4rem;
   font-size: medium;
-  background-color: ghostwhite;
-  opacity: .75;
+  background-color: rgba(248,248,255,0.8);
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 
 .btn-home{
@@ -92,4 +92,31 @@ nav ul li:hover {
   font-size: 5rem;
   margin-block-start: 0;
   text-align: center;
+}
+
+.act-item{
+  background-color: slategray;
+  width: 25vw;
+  height: auto;
+  border-radius: 20px;
+}
+
+.act-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+
+.btn-item{
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: .85rem;
+}
+
+.btn-item:hover{
+  background-color: blue;
+  color: white;
 }

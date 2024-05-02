@@ -17,7 +17,26 @@
             <input placeholder="Email" type="email" tabindex="2" required>
           </fieldset>
           <fieldset>
-            <input placeholder="Numero" type="tel" tabindex="3" required>
+            <input placeholder="Numero de teléfono" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <legend>¿Eres socio?</legend>
+            <div>
+              <input type="radio" name="esSocio" value="si" id="si">Si</input>
+            </div>
+            <div>
+              <input type="radio" name="esSocio" value="no" id="no">No</input>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Seleccione el tipo de consulta</legend>
+            <select>
+              <option>Quiero asociarme</option>
+              <option>Actividades disponibles</option>
+              <option>Suscripción al newsletter</option>
+              <option>Problemas con la facturación</option>
+              <option>Darme de baja</option>
+            </select>
           </fieldset>
           <fieldset>
             <textarea placeholder="Escribe tu mensaje..." tabindex="5" required></textarea>
