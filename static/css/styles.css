@@ -5,21 +5,35 @@
 }
 
 body {
-  background: url(../img/Fondo.jpg) fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #d9ded1;
   margin-top: 0;
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
 }
-
+/**
 h1{
   text-align: center;
   font-size: 3rem;
 }
+**/
 
+.titulos{
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
 p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
   margin-bottom: 20px;
+  color: #d9ded1;
 }
 
 /* No se esta usando por el momento */
@@ -32,7 +46,7 @@ p {
 } */
 
 header {
-  background: rgba(0,0,0,0.9);
+  background-color: #000000;
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -43,8 +57,8 @@ header {
 nav{
   display: flex;
   justify-content:space-between;
-  padding: 0px 50px;
-  height: 60px;
+  padding: 0px 90px;
+  height: 100px;
   align-items: center;
 }
 
@@ -56,7 +70,10 @@ nav ul {
   
 nav ul li {
   float: left;
-  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
 }
 
 nav ul li a {
@@ -72,11 +89,15 @@ nav ul li:hover {
 }
 
 .contenido {
-  padding-top: 4rem;
+  padding-top: 8rem;
   font-size: medium;
-  background-color: rgba(248,248,255,0.8);
+  background-color: #273f49;
   margin-left: 6vw;
   margin-right: 6vw;
+}
+
+.img-club{
+  text-align: center;
 }
 
 .btn-home{
@@ -89,13 +110,13 @@ nav ul li:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-block-start: 0;
   text-align: center;
 }
 
 .act-item{
-  background-color: slategray;
+  background-color: #74848C;
   width: 25vw;
   height: auto;
   border-radius: 20px;
@@ -126,4 +147,9 @@ display: flex;
 text-align: center;
 justify-content: center;
 
+}
+
+.footer{
+background-color: #000000;
+color: white;
 }
