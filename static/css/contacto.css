@@ -13,16 +13,16 @@
 }
 
 body {
-    background: url(../img/Fondo.jpg) fixed;
+    /* background: url(../img/Fondo.jpg) fixed;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     margin: 0;
     height: 100vh;
     font-family:"Open Sans", Helvetica, Arial, sans-serif;
 	font-weight:300;
 	font-size: 12px;
 	line-height:30px;
-
+	background-color: #d9ded1;
  }
 
 .container {

@@ -9,12 +9,6 @@ body {
   margin-top: 0;
   height: 100vh;
 }
-/**
-h1{
-  text-align: center;
-  font-size: 3rem;
-}
-**/
 
 .titulos{
   font-family: "Noto Serif", serif;
@@ -33,17 +27,9 @@ p {
   margin-left: 5rem;
   margin-right: 5rem;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #d9ded1;
 }
-
-/* No se esta usando por el momento */
-/* .Nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: auto;
-  overflow:hidden;
-} */
 
 header {
   background-color: #000000;
@@ -52,6 +38,11 @@ header {
   z-index: 10;
   margin: 0;
   padding: 0;
+}
+
+.logo{
+  width: 6rem;
+  height: 6rem
 }
 
 nav{
@@ -152,4 +143,10 @@ justify-content: center;
 .footer{
 background-color: #000000;
 color: white;
+font-family: "Lato", serif;
+text-align: center;
+}
+
+.footer-link{
+  color: white;
 }
