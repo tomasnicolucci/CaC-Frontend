@@ -18,6 +18,16 @@ body {
   text-align: center;
   color: white;
 }
+
+.titulos-2{
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
 p {
   font-family: "Oxygen", sans-serif;
   font-weight: 400;
@@ -104,6 +114,8 @@ nav ul li:hover {
   font-size: 4rem;
   margin-block-start: 0;
   text-align: center;
+  color: #d9ded1;
+  margin-bottom: 10px;
 }
 
 .act-item{
@@ -111,6 +123,12 @@ nav ul li:hover {
   width: 25vw;
   height: auto;
   border-radius: 20px;
+}
+
+.act-item h3{
+  font-size: 2rem;
+  font-family: "Noto Serif", serif;
+  color: white;
 }
 
 .act-container {
@@ -126,25 +144,30 @@ nav ul li:hover {
   height: 40px;
   border-radius: 5px;
   font-size: .85rem;
+  background-color: #d9ded1;
 }
 
 .btn-item:hover{
-  background-color: blue;
+  background-color: rgb(120, 170, 120);
   color: white;
 }
 
 .act-beneficios{
-display: flex;
-text-align: center;
-justify-content: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 
+.img-tarjeta{
+  width: 300px;
+  height: 200px;
 }
 
 .footer{
-background-color: #000000;
-color: white;
-font-family: "Lato", serif;
-text-align: center;
+  background-color: #000000;
+  color: white;
+  font-family: "Lato", serif;
+  text-align: center;
 }
 
 .footer-link{

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/inscripcion.css" />
+    <title>Inscripcion</title>
+</head>
+<body>
+    <div class="container">  
+        <form id="inscripcion" action="" method="post">
+          <h3>Inscripción a las actividades</h3>
+          <fieldset>
+            <input placeholder="Nombre" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Email" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <legend>¿Eres socio?</legend>
+            <div>
+              <input type="radio" name="esSocio" value="si" id="si">Si</input>
+            </div>
+            <div>
+              <input type="radio" name="esSocio" value="no" id="no">No</input>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Seleccione la actividad</legend>
+            <select>
+              <option>--Seleccione una opción--</option>
+              <option>Futbol</option>
+              <option>Basquet</option>
+              <option>Tenis</option>
+              <option>Natacion</option>
+              <option>Gimnasio</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+          </fieldset>
+        </form>
+      </div>
+</body>
+</html>

@@ -258,3 +258,22 @@
   .slider-container .not-visible {
     display: none !important;
   }
+
+.inscribirme{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.btn-inscr{
+  width: 20vw;
+  height: 4vw;
+  border-radius: 5px;
+  font-size: 2rem;
+  background-color: #d9ded1;
+}
+
+.btn-inscr:hover{
+  background-color: rgb(120, 170, 120);
+  color: white;
+}
