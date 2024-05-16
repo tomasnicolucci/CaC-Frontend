@@ -15,22 +15,40 @@ const validarInscripcion = (e) => {
     divErrorEsSocio.innerHTML = "";
     divErrorActividad.innerHTML = "";
 
+    let valido = true;
+
     if (!nombre.value) {
         divErrorNombre.insertAdjacentText("afterbegin","El nombre no puede estar vacío");
+        valido = false;
     }
 
     if(!email.value){
         divErrorEmail.insertAdjacentText("afterbegin", "El email no puede estar vacío");
+        valido = false;
     }else if(email.value.indexOf("@") === -1 || email.value.indexOf(".") === -1){
         divErrorEmail.insertAdjacentText("afterbegin", "Ingrese un email válido");
+        valido = false;
     }
 
     if(!esSocio.checked){
         divErrorEsSocio.insertAdjacentText("afterbegin", "Debe elegir una opción");
+        valido = false;
     }
 
     if(actividad.value === "--Seleccione una opción--"){
         divErrorActividad.insertAdjacentText("afterbegin", "Debe elegir una opción");
+        valido = false;
+    }
+
+    if(valido){
+        const formData = {
+            nombre: nombre.value,
+            email: email.value,
+            esSocio: esSocio.value,
+            actividad: actividad.value
+        }
+
+        localStorage.setItem('Inscripcion', JSON.stringify(formData));
     }
 }
 
