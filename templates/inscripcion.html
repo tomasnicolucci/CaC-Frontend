@@ -7,27 +7,30 @@
     <title>Inscripcion</title>
 </head>
 <body>
-    <div class="container">  
+  <div class="container">  
         <form id="inscripcion" action="" method="post">
           <h3>Inscripción a las actividades</h3>
           <fieldset>
-            <input placeholder="Nombre" type="text" tabindex="1" required autofocus>
+            <input placeholder="Nombre" type="text" tabindex="1" id="nombre">
           </fieldset>
+          <div class="error" id="error-nombre"></div>
           <fieldset>
-            <input placeholder="Email" type="email" tabindex="2" required>
+            <input placeholder="Email" type="email" tabindex="2" id="email">
           </fieldset>
+          <div class="error" id="error-email"></div>
           <fieldset>
             <legend>¿Eres socio?</legend>
             <div>
-              <input type="radio" name="esSocio" value="si" id="si">Si</input>
+              <input type="radio" name="esSocio" value="si" id="esSocio">Si</input>
             </div>
             <div>
-              <input type="radio" name="esSocio" value="no" id="no">No</input>
+              <input type="radio" name="esSocio" value="no" id="esSocio">No</input>
             </div>
           </fieldset>
+          <div class="error" id="error-esSocio"></div>
           <fieldset>
             <legend>Seleccione la actividad</legend>
-            <select>
+            <select id="actividad">
               <option>--Seleccione una opción--</option>
               <option>Futbol</option>
               <option>Basquet</option>
@@ -36,10 +39,12 @@
               <option>Gimnasio</option>
             </select>
           </fieldset>
+          <div class="error" id="error-actividad"></div>
           <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+            <button name="submit" type="submit" id="inscripcion-submit" data-submit="...Sending">Enviar</button>
           </fieldset>
         </form>
-      </div>
+  </div>
+  <script src="../static/js/validateInscription.js"></script>
 </body>
 </html>

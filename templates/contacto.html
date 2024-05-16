@@ -11,26 +11,30 @@
         <form id="contact" action="" method="post">
           <h3>Contacto</h3>
           <fieldset>
-            <input placeholder="Nombre" type="text" tabindex="1" required autofocus>
+            <input placeholder="Nombre" type="text" tabindex="1" id="nombre" >
           </fieldset>
+          <div class="error" id="error-nombre"></div>
           <fieldset>
-            <input placeholder="Email" type="email" tabindex="2" required>
+            <input placeholder="Email" type="email" tabindex="2" id="email">
           </fieldset>
+          <div class="error" id="error-email"></div>
           <fieldset>
-            <input placeholder="Numero de teléfono" type="tel" tabindex="3" required>
+            <input placeholder="Numero de teléfono" type="tel" tabindex="3" id="telefono">
           </fieldset>
+          <div class="error" id="error-telefono"></div>
           <fieldset>
             <legend>¿Eres socio?</legend>
             <div>
-              <input type="radio" name="esSocio" value="si" id="si">Si</input>
+              <input type="radio" name="esSocio" value="si" id="esSocio">Si</input>
             </div>
             <div>
-              <input type="radio" name="esSocio" value="no" id="no">No</input>
+              <input type="radio" name="esSocio" value="no" id="esSocio">No</input>
             </div>
           </fieldset>
+          <div class="error" id="error-esSocio"></div>
           <fieldset>
             <legend>Seleccione el tipo de consulta</legend>
-            <select>
+            <select id="consulta">
               <option>--Seleccione una opción--</option>
               <option>Quiero asociarme</option>
               <option>Actividades disponibles</option>
@@ -39,13 +43,16 @@
               <option>Darme de baja</option>
             </select>
           </fieldset>
+          <div class="error" id="error-consulta"></div>
           <fieldset>
-            <textarea placeholder="Escribe tu mensaje..." tabindex="5" required></textarea>
+            <textarea placeholder="Escribe tu mensaje..." tabindex="5" id="mensaje"></textarea>
           </fieldset>
+          <div class="error" id="error-mensaje"></div>
           <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
           </fieldset>
         </form>
       </div>
+    <script src="../static/js/validateContact.js"></script>
 </body>
 </html>

@@ -32,6 +32,10 @@ body {
 	position:relative;
 }
 
+.error{
+	color: red;
+}
+
 #inscripcion input[type="text"], #inscripcion input[type="email"], #inscripcion input[type="tel"], #inscripcion input[type="url"], #inscripcion textarea, #inscripcion button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #inscripcion {
